@@ -1,8 +1,8 @@
 namespace: dev
 
 resources:
-  - ../../base
-
-patchesStrategicMerge:
-  - replica-patch.yaml
-  - pss-restricted-patch.yaml
+  - ../../base                  # sample-app base
+  - ../../../../infra/base      # root-level infra
+patches:
+  - path: replica-patch.yaml
+  - path: pss-restricted-patch.yaml
