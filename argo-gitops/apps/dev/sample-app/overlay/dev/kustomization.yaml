@@ -1,5 +1,8 @@
+namespace: dev
+
 resources:
   - ../../base
 
 patchesStrategicMerge:
   - replica-patch.yaml
+  - pss-restricted-patch.yaml
